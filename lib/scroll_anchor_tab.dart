@@ -145,12 +145,12 @@ class _BrnScrollAnchorTabWidgetState extends State<BrnAnchorTab>
         widget.tabDivider ?? const SizedBox.shrink(),
         Expanded(
           child: SingleChildScrollView(
+            key: _key,
+            controller: _scrollController,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: _fillList(),
             ),
-            key: _key,
-            controller: _scrollController,
           ),
         )
       ],
