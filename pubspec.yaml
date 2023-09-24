@@ -1,7 +1,7 @@
 name: phoenix_scroll_anchor
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: phoenix 将做为企业级基础组件:Scroll_anchor,提供项目支持。
+version: 1.0.0
+homepage: 'https://github.com/vsguji/phoenix_scroll_anchor.git'
 
 environment:
   sdk: '>=3.1.2 <4.0.0'
@@ -10,7 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  bindings_compatible: ^1.0.1
+  phoenix_tabbar: ^1.0.0
+  phoenix_popup: ^1.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
