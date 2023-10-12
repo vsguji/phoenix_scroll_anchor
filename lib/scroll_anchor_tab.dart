@@ -136,7 +136,8 @@ class _BrnScrollAnchorTabWidgetState extends State<AnchorTab>
             tab = true;
             _scrollController
                 .animateTo(_cardOffsetList[index],
-                    duration: Duration(milliseconds: 100), curve: Curves.linear)
+                    duration: const Duration(milliseconds: 100),
+                    curve: Curves.linear)
                 .whenComplete(() {
               tab = false;
             });
