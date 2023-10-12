@@ -13,7 +13,7 @@ typedef AnchorTabIndexedBuilder = BadgeTab Function(
     BuildContext context, int index);
 
 /// 滑动锚点组件
-class BrnAnchorTab extends StatefulWidget {
+class AnchorTab extends StatefulWidget {
   /// TabBar的样式
   final BrnAnchorTabBarStyle tabBarStyle;
 
@@ -29,7 +29,7 @@ class BrnAnchorTab extends StatefulWidget {
   /// 设置tab与widget的个数
   final int itemCount;
 
-  BrnAnchorTab(
+  AnchorTab(
       {required this.widgetIndexedBuilder,
       required this.tabIndexedBuilder,
       required this.itemCount,
@@ -41,7 +41,7 @@ class BrnAnchorTab extends StatefulWidget {
       _BrnScrollAnchorTabWidgetState();
 }
 
-class _BrnScrollAnchorTabWidgetState extends State<BrnAnchorTab>
+class _BrnScrollAnchorTabWidgetState extends State<AnchorTab>
     with SingleTickerProviderStateMixin {
   /// 用于控制 滑动
   late ScrollController _scrollController;
@@ -94,7 +94,7 @@ class _BrnScrollAnchorTabWidgetState extends State<BrnAnchorTab>
   }
 
   @override
-  void didUpdateWidget(BrnAnchorTab oldWidget) {
+  void didUpdateWidget(AnchorTab oldWidget) {
     super.didUpdateWidget(oldWidget);
     _cardOffsetList = List.filled(widget.itemCount, -1.0);
     int sub = widget.itemCount - oldWidget.itemCount;
