@@ -37,11 +37,10 @@ class AnchorTab extends StatefulWidget {
       this.tabBarStyle = const BrnAnchorTabBarStyle()});
 
   @override
-  _BrnScrollAnchorTabWidgetState createState() =>
-      _BrnScrollAnchorTabWidgetState();
+  _ScrollAnchorTabWidgetState createState() => _ScrollAnchorTabWidgetState();
 }
 
-class _BrnScrollAnchorTabWidgetState extends State<AnchorTab>
+class _ScrollAnchorTabWidgetState extends State<AnchorTab>
     with SingleTickerProviderStateMixin {
   /// 用于控制 滑动
   late ScrollController _scrollController;
